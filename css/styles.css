@@ -123,7 +123,21 @@ img {
 }
 
 .header-link-current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.header-link-current::after {
+  content: '';
+  position: absolute;
+  top: 99%;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contact:not(:last-child) {
